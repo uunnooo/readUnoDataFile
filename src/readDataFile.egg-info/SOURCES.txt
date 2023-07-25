@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/readDataFile/ReadDataFile.py
+src/readDataFile/_ListDelimiter_.py
+src/readDataFile/__init__.py
+src/readDataFile.egg-info/PKG-INFO
+src/readDataFile.egg-info/SOURCES.txt
+src/readDataFile.egg-info/dependency_links.txt
+src/readDataFile.egg-info/top_level.txt

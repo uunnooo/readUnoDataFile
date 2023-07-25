@@ -9,12 +9,9 @@ listDelimiter = [[' '],
 
 def funcFindDelimiter(line):
     import pandas as pd
-    import re
     import numpy as np
     from collections import Counter
-    from scipy.stats import rankdata
 
-    listCHtoASC = []
     listSelASC = []
 
     listSPCharacter = line.str.findall(r'\W')

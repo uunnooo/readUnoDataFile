@@ -5,22 +5,22 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="readDataFile",
-    version="0.0.1",
+    version="0.0.7",
     author="Uno",
     author_email="uno0522@gmail.com",
     description="uno test data file read",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="none",
+    url="https://github.com/uunnooo/readUnoDataFile",
     project_urls={
-        "none",
+         "Bug Tracker" : "https://github.com/uunnooo/readUnoDataFile",
     },
     classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
          "Operating System :: OS Independent"
     ],
-    package_dir={"": "readDataFile"},
-    packages=setuptools.find_packages(where="readDataFile"),
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
 )

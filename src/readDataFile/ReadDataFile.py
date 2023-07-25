@@ -99,7 +99,7 @@ def funcMakeDataFrame(RawData, *lineNum : int) :
     """
 
     import pandas as pd
-    from _ListDelimiter_ import funcFindDelimiter
+    from ._ListDelimiter_ import funcFindDelimiter
 
     # 라인에 대한 넘버 정보 하나일때, 즉 데이터 정의나 단위 정보일때
     if len(lineNum) < 2 :
