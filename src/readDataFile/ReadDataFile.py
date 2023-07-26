@@ -99,7 +99,8 @@ def funcMakeDataFrame(RawData, *lineNum : int) :
     """
 
     import pandas as pd
-    from ._ListDelimiter_ import funcFindDelimiter
+    from readDataFile._ListDelimiter_ import funcFindDelimiter
+    # from _ListDelimiter_ import funcFindDelimiter
 
     # 라인에 대한 넘버 정보 하나일때, 즉 데이터 정의나 단위 정보일때
     if len(lineNum) < 2 :
@@ -187,10 +188,16 @@ def ReadDataFile(*FileName) :
         fName = Qt.QFileDialog.getOpenFileNames(None,  'Select File', "", 'Datafile(*.txt);;Datafile(*.vbo)')
         [dfList.append(funcReadDataFile(file)) for file in fName[0]]
     else :
-        [dfList.append(funcReadDataFile(file)) for file in FileName]
+        if FileName[0].find('.') == -1:
+            app = Qt.QApplication([])
+            fName = Qt.QFileDialog.getOpenFileNames(None, 'Select File', FileName[0], 'Datafile(*.txt);;Datafile(*.vbo)')
+            [dfList.append(funcReadDataFile(file)) for file in fName[0]]
+        else:
+            [dfList.append(funcReadDataFile(file)) for file in FileName]
 
     return dfList
 
 if __name__ == "__main__" :
-    dfList = ReadDataFile()
+    # dfList = ReadDataFile("D:/uno/Python/TestData/")
+    dfList = ReadDataFile("D:/uno/Python/TestData/RT-1Line.txt")
     print(dfList)

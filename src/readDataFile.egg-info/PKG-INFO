@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: readDataFile
-Version: 0.0.7
+Version: 0.0.9
 Summary: uno test data file read
 Home-page: https://github.com/uunnooo/readUnoDataFile
 Author: Uno
@@ -13,6 +13,16 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
 
-# Example Of Pandas Columns
-
+# Uno Read data File
 - this is function for read datafile 
+
+# Example Code
+
+ import readDataFile
+ 
+### readDataFile.ReadDataFile(파일명)
+ - 단일 파일 또는 여러 파일명 / 탐색기 없이 파일 불러오기
+### readDataFile.ReadDataFile(폴더명)  
+ - 해당 폴더에 탐색기 실행
+### readDataFile.ReadDataFile()
+ - 기본 폴더에 탐색기 실행

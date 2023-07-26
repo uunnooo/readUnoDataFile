@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="readDataFile",
-    version="0.0.7",
+    version="0.0.9",
     author="Uno",
     author_email="uno0522@gmail.com",
     description="uno test data file read",
